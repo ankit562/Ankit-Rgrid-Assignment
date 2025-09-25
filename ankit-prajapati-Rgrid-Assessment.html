@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medmart</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  </head>
+  <body class="">
+ <!--Header start-->
+  <header class="shadow">
+  <div class="header">
+        <div class="logo">
+        <img src="images/medmart-logo.png" alt="Madmart Logo" class="logo-medmart">
+    </div>
+        
+        <div class="header-actions">
+            <button class="action-btn">
+                <i class="fas fa-question-circle"></i> Home
+            </button>
+            <button class="action-btn">
+                <i class="fas fa-file-powerpoint"></i> About
+            </button>
+			<!--dropdown start-->
+            <el-dropdown class="inline-block">
+  <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50">
+    Collections
+    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-gray-400">
+      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+    </svg>
+  </button>
+
+  <el-menu anchor="bottom end" popover class="w-46 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+    <div class="py-1">
+      <a href="#" class="block px-8 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Medications</a>
+	  <a href="#" class="block px-8 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Stethoscopes</a>
+      <a href="#" class="block px-8 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Thermometers</a>
+      <a href="#" class="block px-8 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Medical Supplies</a>
+    </div>
+  </el-menu>
+</el-dropdown>	
+<!--dropdown end-->
+			<button class="action-btn">
+                <i class="fas fa-graduation-cap"></i> Shop
+            </button>
+			<button class="action-btn">
+                <i class="fas fa-graduation-cap"></i> Contact
+            </button>
+        </div>
+        
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="ask-btn">
+                <i class="fas fa-question-circle"></i> Home
+            </button>
+            <button class="export-btn">
+                <i class="fas fa-file-powerpoint"></i> About
+            </button>
+            <button class="tutorial-btn">
+                <i class="fas fa-graduation-cap"></i> Collections
+            </button>
+			<button class="tutorial-btn">
+                <i class="fas fa-graduation-cap"></i> Shop
+            </button>
+			<button class="tutorial-btn">
+                <i class="fas fa-graduation-cap"></i> Contact
+            </button>
+        </div>
+		<div class="header-icons">
+                <img src="images/search-Item.png">
+                <img src="images/Icon.png">
+                <img src="images/cart-icon.png">
+        </div>
+		</div>
+    </header>
+	 <!--Header End-->
+	  <!--Main content start-->
+	<section>
+	<div class="mx-auto uppercase mt-28 mb-28">
+	<p class="ftree text-center text-[1.125rem]">Since 2014</p>
+	<h2 class="text-center sm:text-[4rem] lg:text-[7rem] font-bold leading-tight">Trusted</h2>
+	<h2 class="text-center sm:text-[4rem] lg:text-[7rem] font-bold leading-tight">Wellness</h2>
+	<h2 class="text-center sm:text-[4rem] lg:text-[7rem] font-bold leading-tight">Store</h2>
+	<img class="Vaccine absolute top-24" src="images/Vaccine.png">
+	<img class="facemask absolute top-[90%] right-3/4" src="images/facemask.png">
+	<img class="sanitizer absolute top-full left-3/4" src="images/sanitizer.png">
+	<img class="Medicine absolute top-64 md:top-72 left-[72%] md:left-[66%] sm:left[66%]" src="images/Medicine.png">
+	<div class="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6">
+          <a href="#" class="rounded-md bg-cyan-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-cyan-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 mb-4">Shop Essentials</a>
+          <a href="#" class="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-xs hover:text-white hover:bg-cyan-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 border-solid border-gray-400 border-1 mb-4">About Medmart</a>
+    </div>
+	</div>
+	</section>
+	<!--Main content end-->
+	<!--Mobile Nav script start-->
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            hamburgerMenu.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!hamburgerMenu.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+	<!--Mobile Nav script end-->
+  </body>
+</html>

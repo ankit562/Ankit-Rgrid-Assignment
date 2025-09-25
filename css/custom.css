@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+font-family: myFirstFont;
+src: url(../fonts/Figtree-Regular.ttf);
+}
+.sora-uniquifier {
+font-family: "Sora", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+.figtree-uniquifier {
+font-family: "Figtree", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+header {
+padding-bottom:1px;
+}
+.header  {
+margin: 21px 84px;
+display: flex;
+justify-content: space-between;
+}
+img.logo {
+max-width: 100%;
+}
+.header-actions {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.action-btn {
+	background-color: #fff;
+	color: #000;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.action-btn:hover {
+	color: #1da7fb;
+}
+
+.hamburger-menu {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30px;
+	height: 33.6px;
+	cursor: pointer;
+}
+
+.hamburger-menu span {
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	border-radius: 3px;
+	transition: all 0.3s;
+}
+
+.mobile-menu {
+	display: none;
+	position: absolute;
+		top: 15%;
+	left: 0;
+	right: 0;
+	background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+	border-radius: 0 0 10px 10px;
+	padding: 15px;
+	flex-direction: column;
+	gap: 10px;
+	z-index: 100;
+}
+.mobile-menu button {
+	width: 100%;
+	justify-content: center;
+	background-color: #2962ff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 30px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.header-actions{font-size: 26px;}
+.header-icons{display: flex; justify-content: space-between; min-width: 157.5px}
+.header-icons img { display: flex;
+min-width: 31.5px;
+max-height: 33.6px;
+}
+p.ftree {
+	font-family:Figtree-Regular;
+}
+.lg\:text-\[7rem\] {
+font-size:  7rem;
+}
+.dropdown {
+display: none;
+}
+/* Responsive styles */
+	@media (max-width: 1440px) {
+		
+	}
+	@media (max-width: 768px) {
+		.header-actions {
+			display: none;
+		}
+		
+		.hamburger-menu {
+			display: flex;
+		}
+		
+		.mobile-menu.active {
+			display: flex;
+			width: 20%;
+			margin: 0 auto;
+		}
+		.header-icons{
+			display: flex; 
+			justify-content: 
+			space-between; 
+			min-width: 157.5px
+		}
+		.mobile-menu {
+			background:  #2962ff;;
+		}
+		.mobile-menu button {
+			width: 100%;
+			justify-content: center;
+			background-color: #2962ff;
+			color: white;
+			border: 1px solid white;
+			border-radius: 0;
+			padding: 10px 20px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+		.mobile-menu.active {
+			display: flex;
+			width: 50%;
+			margin: 0 auto;
+		}
+		.sanitizer {
+			width: 293px;
+		}
+		.facemask {
+			width: 330px;
+		}
+		.Medicine {
+			width:90px;
+		}
+		.Vaccine {
+		width:187px;
+		}
+	}
+	@media (max-width: 480px) {
+		.header {
+			margin: 21px 15px;
+		}
+		.hamburger-menu {
+			order: 2;
+			width: 30px;
+			align-items: flex-end;
+			justify-content: space-around;
+		}
+		.mobile-menu.active {
+			display: flex;
+			width: auto;
+			margin: 0 15px;
+		}
+		.header-icons{
+			display: none; 
+			justify-content: space-between; 
+			min-width: 157.5px}
+		.sanitizer {
+			width: 120px;
+		}
+		.facemask {
+			width:180px;
+		}
+		.Medicine {
+			width:60px;
+		}
+		.Vaccine {
+		width:120px;
+		}
+		.sm\:text-\[4rem\] {
+			font-size: 4rem;
+		}
+	}
