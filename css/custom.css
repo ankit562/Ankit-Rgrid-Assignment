@@ -151,7 +151,8 @@ p.ftree {
 		.mobile-menu.active {
 			display: flex;
 			width: 50%;
-			margin: 0 auto;
+			margin-right: 0;
+			top: 66px;
 		}
 		.sanitizer {
 			width: 293px;
@@ -163,7 +164,7 @@ p.ftree {
 			width:90px;
 		}
 		.Vaccine {
-		width:187px;
+			width:187px;
 		}
 	}
 	@media (max-width: 480px) {
@@ -194,7 +195,7 @@ p.ftree {
 			width:60px;
 		}
 		.Vaccine {
-		width:120px;
+			width:120px;
 		}
 		.sm\:text-\[4rem\] {
 			font-size: 4rem;
