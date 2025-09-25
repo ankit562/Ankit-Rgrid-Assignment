@@ -3,36 +3,36 @@
 @tailwind utilities;
 @font-face {
 font-family: myFirstFont;
-src: url(../fonts/Figtree-Regular.ttf);
+	src: url(../fonts/Figtree-Regular.ttf);
 }
 .sora-uniquifier {
-font-family: "Sora", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
+	font-family: "Sora", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 .figtree-uniquifier {
-font-family: "Figtree", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
+	font-family: "Figtree", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
 header {
-padding-bottom:1px;
+	padding-bottom:1px;
 }
 .header  {
-margin: 21px 84px;
-display: flex;
-justify-content: space-between;
+	margin: 21px 84px;
+	display: flex;
+	justify-content: space-between;
 }
 img.logo {
-max-width: 100%;
+	max-width: 100%;
 }
 .header-actions {
-display: flex;
-align-items: center;
-gap: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 .action-btn {
 	background-color: #fff;
@@ -93,24 +93,26 @@ gap: 20px;
 	gap: 8px;
 }
 .header-actions{font-size: 26px;}
-.header-icons{display: flex; justify-content: space-between; min-width: 157.5px}
-.header-icons img { display: flex;
-min-width: 31.5px;
-max-height: 33.6px;
+.header-icons{
+	display: flex; 
+	justify-content: 
+	space-between; 
+	min-width: 157.5px}
+.header-icons img { 
+	display: flex;
+	min-width: 31.5px;
+	max-height: 33.6px;
 }
 p.ftree {
 	font-family:Figtree-Regular;
 }
 .lg\:text-\[7rem\] {
-font-size:  7rem;
+	font-size:  7rem;
 }
 .dropdown {
-display: none;
+	display: none;
 }
 /* Responsive styles */
-	@media (max-width: 1440px) {
-		
-	}
 	@media (max-width: 768px) {
 		.header-actions {
 			display: none;
@@ -126,11 +128,8 @@ display: none;
 			margin: 0 auto;
 		}
 		.header-icons{
-			display: flex; 
-			justify-content: 
-			space-between; 
-			min-width: 157.5px
-		}
+			display: none;
+			}
 		.mobile-menu {
 			background:  #2962ff;;
 		}
@@ -183,9 +182,8 @@ display: none;
 			margin: 0 15px;
 		}
 		.header-icons{
-			display: none; 
-			justify-content: space-between; 
-			min-width: 157.5px}
+			display: none;
+			}
 		.sanitizer {
 			width: 120px;
 		}
